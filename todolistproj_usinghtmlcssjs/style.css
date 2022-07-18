@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-image : linear-gradient(to right,#e228ba,rgb(51, 136, 170));
+    color:azure;
+}
+
+.container{
+    width:1280px;
+    margin: auto;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 70px;
+    padding: 0 20px;
+}
+
+#header h2{
+    font-size: 2rem;
+}
+
+#userinput {
+    margin-top: 3px;
+    width:350px;
+    text-align: center;
+}
+
+#input{
+    width:75%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+#input:focus{
+    box-shadow: 0px 0px 5px #42dd1ba4;
+    border: 1px solid #42dd1ba4;
+}
+
+button{
+   color: black;
+   width: fit-content;
+   outline: none;
+   padding: 8px;
+   background-color: lightgrey;
+   border:1px sold lightgrey;
+   cursor: pointer;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+   -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+#todolist{
+    width:500px;
+    margin: auto;
+}
+
+.item{
+display: flex;
+justify-content: space-between;
+width: 100%;
+height:auto;
+border-radius: 2px;
+background-color: white;
+padding: 1rem;
+font-size: 1rem;
+margin-top: 10px;
+text-transform: uppercase;
+color: black;
+}
+
+.item:hover{
+    box-shadow: 0 0 20px #E22865;
+    border: 1px solid #E22865;
+  }
+  
+  .item i{
+    cursor: pointer;
+    margin: 0 5px;
+  }
